@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lic. HNA. Amaná - Kinesiología & Fisiatría</title>
+  <!-- Fuente de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/style.css">
+  <!-- <link rel="script" href="/src/script.js"> -->
+</head>
+<body>
+  <!-- Header / Navegación -->
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <!-- <li onclick=hideSidebar()><a href="#">icono</a></li> -->
+        <li><a onclick=toggleSidebar() href="#hero">Inicio</a></li>
+        <li><a onclick=toggleSidebar() href="#sobre-mi">Sobre Mí</a></li>
+        <li><a onclick=toggleSidebar() href="#servicios">Servicios</a></li>
+        <li><a onclick=toggleSidebar() href="#testimonios">Testimonios</a></li>
+        <li><a onclick=toggleSidebar() href="#contacto">Contacto</a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><img src="/public/instagram-profile-picture.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;"></a></li>
+        <li class="hideOnMobile"><a href="#hero">Inicio</a></li>
+        <li class="hideOnMobile"><a href="#sobre-mi">Sobre Mí</a></li>
+        <li class="hideOnMobile"><a href="#servicios">Servicios</a></li>
+        <li class="hideOnMobile"><a href="#testimonios">Testimonios</a></li>
+        <li class="hideOnMobile"><a href="#contacto">Contacto</a></li>
+
+        <li class="menu-button" onclick=toggleSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+          <path id="menuPath" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+      
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Bienvenida a tu camino hacia el bienestar</h1>
+      <p>Recupera tu movilidad y vive sin dolor con tratamientos personalizados.</p>
+      <a href="#contacto" class="btn-primary">Agendar Cita</a>
+      <!-- <div class="hero-image" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div> -->
+      <!-- <img src="/public/stock-media/woman.jpg" alt="Lic. HNA. Amaná" -->
+      <!-- style="width: 200%; border-radius: 10px; position: absolute; top: 0; left: 0; z-index: -1;"> -->
+    </div>
+  </section>
+
+  <!-- Sobre Mí Section -->
+  <section class="section" id="sobre-mi">
+    <div class="container">
+      <h2>Sobre Mí</h2>
+      <div class="about">
+        <img src="/public/sample/profile-welcome.webp" alt="Lic. Mdre. Hna Nana Amaná">
+        <div class="about-text">
+          <p>Soy la Lic. Mdre. Hna Nana Amaná, especialista en Kinesiología y Fisiatría, con más de 10 años de experiencia. Me formé en la Universidad de la Salud y he trabajado con deportistas y pacientes de todas las edades, ayudándoles a recuperar su calidad de vida mediante terapias manuales y tratamientos innovadores.</p>
+          <p>Mi enfoque es integral: combino técnicas tradicionales y modernas para ofrecer un tratamiento personalizado que atienda las necesidades únicas de cada paciente. Mi compromiso es acompañarte en cada paso de tu proceso de recuperación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios Section -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="services">
+        <div class="service-item">
+          <img src="https://situ.care/salud/wp-content/uploads/2022/09/evaluacion-kinesica-2.jpg" alt="Evaluación Funcional">
+          <h3>Evaluación Funcional</h3>
+          <p>Análisis completo de tu estado físico para diseñar un plan de tratamiento a medida.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3WQxLJh_lS2bwNpQ5JnzqBQhiknmIELFjKw&s    " alt="Rehabilitación Post-operatoria">
+          <h3>Rehabilitación Post-operatoria</h3>
+          <p>Recuperación rápida y segura con programas especializados después de cirugías.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZgWyk3d15JQLM4RHsPWKbrkUE8B9oRJCkAQ&s" alt="Terapia Manual">
+          <h3>Terapia Manual</h3>
+          <p>Tratamientos manuales para aliviar el dolor y mejorar la movilidad articular.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://www.efisio.es/wp-content/uploads/kinesiotaping-que-es.jpg" alt="Lesiones Deportivas">
+          <h3>Lesiones Deportivas</h3>
+          <p>Atención especializada para prevenir y tratar lesiones en deportistas.</p>
+        </div>
+        <div class="service-item">
+          <img src="https://facultades.ucsc.cl/content/uploads/sites/59/2024/05/Kinesiologia-del-Deporte-y-la-Actividad-Fisica.jpg" alt="Programas de Ejercicio">
+          <h3>Programas de Ejercicio</h3>
+          <p>Planes de fortalecimiento y acondicionamiento adaptados a tus objetivos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios Section -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <h2>Testimonios</h2>
+      <div class="testimonials">
+        <div class="testimonial-item">
+          <p>"La Lic. Mdre. Hna Nana Amaná cambió mi vida. Gracias a su tratamiento recuperé mi movilidad y hoy disfruto de una vida sin dolor."</p>
+          <h4>- Juan Pérez</h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"Su enfoque profesional y humano me brindó la confianza que necesitaba para superar una lesión que parecía insuperable."</p>
+          <h4>- Ana Gómez</h4>
+        </div>
+        <div class="testimonial-item">
+          <p>"Resultados visibles en pocas sesiones. Recomiendo ampliamente sus servicios a cualquier persona que busque mejorar su calidad de vida."</p>
+          <h4>- Carlos López</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto Section -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <div class="contact-form">
+        <form action="/enviar-formulario" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Tu email" required>
+          
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+          
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+          
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lic. Mdre. Hna Nana Amaná. Todos los derechos reservados.</p>
+      <ul>
+        <li><a class="ri-facebook-fill" href="https://www.facebook.com/anama.candia" title="Facebook"></a></li>
+        <li><a class="ri-instagram-line" href="https://www.instagram.com/kinesiologa.anamacandia/" title="Instagram"></a></li>
+        <li><a class="ri-linkedin-fill" href="#" title="LinkedIn"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    console.log("hello world");
+function showSidebar() {
+    // document.querySelector('.sidebar').classList.toggle('flex');
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+
+
+function toggleSidebar() {
+  // console.log("toggleSidebar ejecutado");
+    const sidebar = document.querySelector('.sidebar');
+    let menuPath = document.getElementById('menuPath');
+
+    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+        sidebar.style.display = 'flex';
+        menuPath.setAttribute("d", "m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z");
+    } else {
+        sidebar.style.display = 'none';
+        menuPath.setAttribute("d", "M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z");
+    }
+}
+  </script>
+</body>
+</html>

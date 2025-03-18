@@ -1,0 +1,350 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    /* background-color: #ffe0e8; */
+    color: #333;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+/* Header y Navegación fija */
+header {
+    background-color: #ffe0e8;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+/* navX {
+    max-width: 1200px;
+    min-width: 500px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+/* .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f05a28;
+    color: #da6b8b;
+} */
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    /* Extras */
+    /* padding: 10px; */
+    
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+    /* TUNE */
+}
+
+nav a {
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50px; /* Adjust this value to move the sidebar down */
+    right: 0;
+    height: calc(100vh - 50px); /* Adjust this value to match the top value */
+    width: 200px;
+    z-index: 999;
+    /* background-color: aqua; */
+    background-color: rgba(255,255,255,0.199);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.158);
+    display: none; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 0px;
+}
+
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+.menu-button a svg {
+    height: 35px;
+    width: 24px;
+    fill: black;
+}
+
+@media(max-width: 580px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+        }
+}
+
+@media(max-width: 330px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+nav ul li a {
+    /* font-weight: 500;
+    transition: color 0.3s; */
+}
+nav ul li a:hover {
+    /* color: #f05a28; */
+    /* color: #ca4369; */
+}
+
+/* Hero Section */
+.hero {
+    background: url('/public/stock-media/woman.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-top: 0px; /* para compensar el header fijo */
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.btn-primary {
+    background-color: #ff4378;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #d6184e;
+}
+/* Secciones generales */
+.section {
+    padding: 60px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    /* color: #f05a28; */
+    color: #ca4369;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Sección Sobre Mí */
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.about img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.about-text {
+    flex: 1;
+    font-size: 1.1em;
+}
+/* Sección de Servicios con tarjetas */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.service-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.service-item img {
+    width: 120px;
+    margin-bottom: 15px;
+}
+.service-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #f05a28;
+}
+.service-item p {
+    font-size: 0.95em;
+    color: #666;
+}
+/* Sección de Testimonios */
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.testimonial-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    position: relative;
+}
+.testimonial-item::before {
+    content: "“";
+    font-size: 3em;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    /* color: #f05a28; */
+    color: #ca4369;
+}
+.testimonial-item p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.testimonial-item h4 {
+    text-align: right;
+    font-weight: normal;
+    color: #333;
+}
+/* Sección de Contacto */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact-form button {
+    width: 100%;
+    background-color: #ff4378;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact-form button:hover {
+    background-color: #d6184e;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    margin: 5px 0;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+footer ul li a {
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+footer ul li a:hover {
+    color: #f05a28;
+}
+/* Responsive */
+/* @media (max-width: 768px) {
+    .about {
+    flex-direction: column;
+    }
+} */
