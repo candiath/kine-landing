@@ -20,7 +20,7 @@ ul {
 }
 /* Header y Navegación fija */
 header {
-    background-color: #ffe0e8;
+    background-color: #ddabb9;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: fixed;
     width: 100%;
@@ -44,8 +44,8 @@ header {
     color: #da6b8b;
 } */
 nav {
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    background-color: #ddabb9;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
     /* Extras */
     /* padding: 10px; */
     
@@ -71,6 +71,7 @@ nav a {
     display: flex;
     align-items: center;
     color: black;
+    
 }
 nav a:hover {
     background-color: #f0f0f0;
@@ -224,9 +225,12 @@ nav ul li a:hover {
 }
 /* Sección de Servicios con tarjetas */
 .services {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    
 }
 .service-item {
     background-color: #fff;
@@ -235,6 +239,7 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
 }
 .service-item:hover {
     transform: translateY(-5px);
