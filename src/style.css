@@ -48,7 +48,7 @@ nav {
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
     /* Extras */
     /* padding: 10px; */
-    
+    padding-right: 10px;
 }
 
 nav ul {
@@ -108,12 +108,13 @@ nav li:first-child {
 
 .menu-button {
     display: none;
+    background-color: transparent !important;
 }
 
 .menu-button a svg {
     height: 35px;
     width: 24px;
-    fill: black;
+    fill: black !important;
 }
 
 @media(max-width: 580px){
@@ -122,7 +123,7 @@ nav li:first-child {
     }
     .menu-button{
         display: block;
-        }
+    }
 }
 
 @media(max-width: 330px){
@@ -131,14 +132,14 @@ nav li:first-child {
     }
 }
 
-nav ul li a {
+/* nav ul li a { */
     /* font-weight: 500;
     transition: color 0.3s; */
-}
-nav ul li a:hover {
+/* } */
+/* nav ul li a:hover { */
     /* color: #f05a28; */
     /* color: #ca4369; */
-}
+/* } */
 
 /* Hero Section */
 .hero {
@@ -218,10 +219,23 @@ nav ul li a:hover {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
+    object-fit: cover;
 }
 .about-text {
     flex: 1;
     font-size: 1.1em;
+    /* flex-direction: column; */
+    /* min-width: 300px; */
+}
+@media (max-width: 777px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text {
+        min-width: 300px;
+    }
+    
 }
 /* Sección de Servicios con tarjetas */
 .services {
