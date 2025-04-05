@@ -152,6 +152,14 @@
       </ul>
     </div>
   </footer>
+
+  <!-- Banner de sitio en construcción -->
+<div id="under-construction" class="hidden">
+  🚧 Este sitio está en construcción. Algunas secciones pueden no estar disponibles.
+  <button onclick="document.getElementById('under-construction').style.display='none'" style="margin-left: 1rem;">✖</button>
+</div>
+
+
   <script>
 function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
@@ -169,6 +177,24 @@ function toggleSidebar() {
 document.querySelectorAll('a[target="_blank"]').forEach(link => {
   link.setAttribute('rel', 'noopener noreferrer');
 });
+
+const banner = document.getElementById('under-construction');
+  const closeBtn = document.getElementById('close-banner');
+
+  if (!localStorage.getItem('bannerClosed')) {
+    banner.classList.remove('hidden');
+    requestAnimationFrame(() => {
+      banner.classList.add('show');
+    });
+  }
+
+  closeBtn.addEventListener('click', () => {
+    banner.classList.remove('show');
+    localStorage.setItem('bannerClosed', 'true');
+    setTimeout(() => {
+      banner.classList.add('hidden');
+    }, 40000); // coincide con el tiempo de la animación
+  });
 
   </script>
 </body>
