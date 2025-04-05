@@ -323,3 +323,12 @@ footer ul li a {
 footer ul li a:hover {
     color: #f05a28;
 }
+
+/* Disable hover effects on touch devices */  
+@media (pointer: coarse) {
+    footer ul li a:hover, nav a:hover {
+      color: inherit;
+      background-color: inherit;
+      text-decoration: none; /* remove underline on hover */
+    }
+  }
