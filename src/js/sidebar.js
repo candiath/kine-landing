@@ -1,3 +1,4 @@
+// todo: remove console.log
 console.log('Sidebar script loaded');
 function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
