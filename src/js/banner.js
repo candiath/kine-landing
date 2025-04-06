@@ -1,3 +1,4 @@
+// todo: remove console.log
 console.log('Banner script loaded');
 
 const banner = document.getElementById('under-construction');

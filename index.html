@@ -8,11 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="/src/styles/hamburguer-icon.css">
+
+
   <script src="/src/js/banner.js" defer></script>
-  <script src="/src/js/sidebar.js"></script>
+  <script type="module" src="/src/js/sidebar.js"></script>
   <script src="/src/js/app.js" defer></script>
+  <script type="module" src="/src/js/hamburguer-icon.js"></script>
+
   
 </head>
 <body>
@@ -34,9 +40,16 @@
         <li class="hideOnMobile"><a href="#testimonios">Testimonios</a></li>
         <li class="hideOnMobile"><a href="#contacto">Contacto</a></li>
 
-        <li class="menu-button" onclick=toggleSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-          <path id="menuPath" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-      </ul>
+        <!-- <li class="menu-button" onclick=toggleSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"> -->
+          <!-- <path id="menuPath" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> -->
+          <li class="menu-button" onclick=toggleSidebar()>
+            <a>
+              <div id="nav-icon3">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </a>
+          </li>  
+        </ul>
     </nav>
       
   </header>
@@ -157,14 +170,10 @@
     </div>
   </footer>
 
-  <!-- Banner de sitio en construcción -->
-<div id="under-construction" class="hidden">
-  🚧 Este sitio está en construcción. Algunas secciones pueden no estar disponibles.
-  <button id="close-banner">✖</button>
-</div>
-
-
-  <script>
-  </script>
+<!-- Banner de sitio en construcción -->
+  <aside id="under-construction" class="hidden">
+    🚧 Este sitio está en construcción. Algunas secciones pueden no estar disponibles.
+    <button id="close-banner">✖</button>
+  </aside>
 </body>
 </html>
