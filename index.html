@@ -10,6 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="/src/style.css">
+  <script src="/src/js/banner.js" defer></script>
+  <script src="/src/js/sidebar.js"></script>
+  <script src="/src/js/app.js" defer></script>
+  
 </head>
 <body>
   <!-- Header / Navegación -->
@@ -152,24 +156,15 @@
       </ul>
     </div>
   </footer>
+
+  <!-- Banner de sitio en construcción -->
+<div id="under-construction" class="hidden">
+  🚧 Este sitio está en construcción. Algunas secciones pueden no estar disponibles.
+  <button id="close-banner">✖</button>
+</div>
+
+
   <script>
-function toggleSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    let menuPath = document.getElementById('menuPath');
-
-    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
-        sidebar.style.display = 'flex';
-        menuPath.setAttribute("d", "m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z");
-    } else {
-        sidebar.style.display = 'none';
-        menuPath.setAttribute("d", "M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z");
-    }
-}
-
-document.querySelectorAll('a[target="_blank"]').forEach(link => {
-  link.setAttribute('rel', 'noopener noreferrer');
-});
-
   </script>
 </body>
 </html>
