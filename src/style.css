@@ -62,18 +62,23 @@ nav li:first-child {
 .sidebar {
     position: fixed;
     top: 50px; /* Adjust this value to move the sidebar down */
-    right: 0;
+    right: -200px;
     height: calc(100vh - 50px); /* Adjust this value to match the top value */
     width: 200px;
     z-index: 999;
     background-color: rgba(255,255,255,0.199);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.158);
-    display: none; 
+    display: flex; 
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 40px 0px;
+    transition: right 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    right: 0;
 }
 
 .sidebar li {
