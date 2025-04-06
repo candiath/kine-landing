@@ -364,3 +364,9 @@ footer ul li a:hover {
   .hidden {
     display: none;
   }
+
+  /* Site under construction banner styles */
+  #close-banner {
+    margin-left: 1rem;
+    
+  }
