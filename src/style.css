@@ -369,3 +369,7 @@ footer ul li a:hover {
 #close-banner {
     margin-left: 1rem;
 }
+
+html {
+    scroll-behavior: smooth;
+}
