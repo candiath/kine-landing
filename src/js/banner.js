@@ -12,7 +12,7 @@ function shouldShowBanner() {
   const closedTime = new Date(parseInt(bannerClosedTime));
   const currentTime = new Date();
   const timeDifference = currentTime - closedTime;
-  const twentyFourHours = 246060000;
+  const twentyFourHours = 86400000;
 
   if (timeDifference >= twentyFourHours) {
     localStorage.removeItem("bannerClosedTime");
