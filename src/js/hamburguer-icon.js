@@ -1,4 +1,3 @@
-console.log("Hamburguer icon script loaded successfully.");
 document.addEventListener('DOMContentLoaded', function () {
     const toggleIcons = document.querySelector('#nav-icon3');
       toggleIcons.addEventListener('click', () => {
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
 export function toggleBurgerIcon() {
   const burgerIcon = document.getElementById("nav-icon3");
   burgerIcon.classList.toggle("open");
-  console.log("Hamburguer icon toggled.");
 }
 
 export function setBurgerIcon(open) {

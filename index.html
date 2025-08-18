@@ -18,6 +18,7 @@
   <script type="module" src="/src/js/sidebar.js"></script>
   <script src="/src/js/app.js" defer></script>
   <script type="module" src="/src/js/hamburguer-icon.js"></script>
+  <script src="/src/js/whatsapp.js" defer></script>
 
   
 </head>
@@ -40,8 +41,6 @@
         <li class="hideOnMobile"><a href="#testimonios">Testimonios</a></li>
         <li class="hideOnMobile"><a href="#contacto">Contacto</a></li>
 
-        <!-- <li class="menu-button" onclick=toggleSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"> -->
-          <!-- <path id="menuPath" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li> -->
           <li class="menu-button" onclick=toggleSidebar()>
             <a>
               <div id="nav-icon3">
@@ -89,7 +88,7 @@
           <p>Análisis completo de tu estado físico para diseñar un plan de tratamiento a medida.</p>
         </div>
         <div class="service-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3WQxLJh_lS2bwNpQ5JnzqBQhiknmIELFjKw&s    " alt="Rehabilitación Post-operatoria">
+          <img src="https://media-club.dkvservicios.com/media/catalog/product/1/9/1964-88040_rehabilitacion.jpg" alt="Rehabilitación Post-operatoria">
           <h3>Rehabilitación Post-operatoria</h3>
           <p>Recuperación rápida y segura con programas especializados después de cirugías.</p>
         </div>
@@ -138,8 +137,8 @@
     <div class="container">
       <h2>Contacto</h2>
       <div class="contact-form">
-        <form action="/enviar-formulario" method="POST">
-          <label for="nombre">Nombre:</label>
+        <form method="POST">
+          <!-- <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
           
           <label for="email">Email:</label>
@@ -147,11 +146,11 @@
           
           <label for="telefono">Teléfono:</label>
           <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required>
-          
+           -->
           <label for="mensaje">Mensaje:</label>
           <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-          
-          <button type="submit">Enviar Mensaje</button>
+
+          <button id='submitBtn' type="button">Enviar Mensaje</button>
         </form>
       </div>
     </div>
@@ -165,7 +164,7 @@
         <li><a class="ri-whatsapp-line" href="https://wa.me/3754437216" target="_blank" title="WhatsApp"></a></li>
         <li><a class="ri-facebook-fill" href="https://www.facebook.com/anama.candia" target="_blank" title="Facebook"></a></li>
         <li><a class="ri-instagram-line" href="https://www.instagram.com/kinesiologa.anamacandia/" target="_blank" title="Instagram"></a></li>
-        <li><a class="ri-linkedin-fill" href="#" target="_blank" title="LinkedIn"></a></li>
+        <!-- <li><a class="ri-linkedin-fill" href="#" target="_blank" title="LinkedIn"></a></li> -->
       </ul>
     </div>
   </footer>
