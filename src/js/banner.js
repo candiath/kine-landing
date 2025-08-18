@@ -31,7 +31,6 @@ if (shouldShowBanner()) {
     });
   }, 1000);
 } else {
-  console.log("Banner already closed. Ignoring.");
 }
 
 closeBtn.addEventListener("click", () => {
