@@ -1,7 +1,5 @@
-import { setBurgerIcon, toggleBurgerIcon } from "../js/hamburguer-icon.js";
-console.log('Sidebar script loaded');
+import { setBurgerIcon } from "../js/hamburguer-icon.js";
 
-// todo: remove console.log
 function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
     const isOpen = sidebar.classList.toggle('open');
